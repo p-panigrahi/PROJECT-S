@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom"; // First import createBrowserRouter from react-router-dom for routeing perpose
 import App from "../App.jsx"; // Import App From App.jsx
 import Home from "../pages/Home.jsx"; // Import Home file From Pages Folder
+import Login from "../pages/Login.jsx";
 const router = createBrowserRouter([
   // Create router Variable to Store Path , Elements and Children
   {
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <Home />,
+      },
+      {
+        path: "login",
+        element: <Login />,
       },
     ],
   },
